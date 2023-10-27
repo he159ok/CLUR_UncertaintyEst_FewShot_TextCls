@@ -77,7 +77,7 @@ To use other datadatasets, you can set the below parameters that used in the abo
 
 
 #### Checkpoints
-For the checkpoints of our reported results (CLUR-b-3), they are in the [here] (https://virginiatech-my.sharepoint.com/:f:/g/personal/jianfenghe_vt_edu/EueYTl7SN4dOmNGyo6MMXsUB4sQVmwNZG8Vr10n7XB2ptw?e=2rZLYV).
+For the checkpoints of our reported results (CLUR-b-3), they are in the [here](https://virginiatech-my.sharepoint.com/:f:/g/personal/jianfenghe_vt_edu/EueYTl7SN4dOmNGyo6MMXsUB4sQVmwNZG8Vr10n7XB2ptw?e=2rZLYV).
 You can reproduce our results by using the evaluation script, which replaces the `{path to the last saved epoch checkpoint file id}` accordingly.
 
 
