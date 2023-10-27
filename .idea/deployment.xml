@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="jfhe@45.3.96.229:22" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="NVC_1080_Nips18">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/jfhe/Documents/MountHe/jfhe/projects/flair_ner_unc" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/FewShotDocUncertainty/flair_ner_unc/src/data" />
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/FewShotDocUncertainty/flair_ner_unc/src/dataset_downloaded" />
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/FewShotDocUncertainty/flair_ner_unc/src/tmp-runs" />
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/FewShotDocUncertainty/flair_ner_unc/src/wiki.en.vec" />
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/FewShotDocUncertainty/flair_ner_unc/src/wiki.en.vec.pt" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="NVC_MMDialogue (6)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/jfhe/Documents/MountHe/jfhe/FewShotDocUncertainty/few_shot_doc_classification_uncertainty" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="jfhe@45.3.96.229:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/jfhe/Documents/MountHe/jfhe/projects/clean_fewshot_unc" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/projects/clean_fewshot_unc/src/data" />
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/projects/clean_fewshot_unc/src/dataset_downloaded" />
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/projects/clean_fewshot_unc/src/tmp-runs" />
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/projects/clean_fewshot_unc/src/wiki.en.vec" />
+            <excludedPath path="/home/jfhe/Documents/MountHe/jfhe/projects/clean_fewshot_unc/src/wiki.en.vec.pt" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="jfhe@45.3.96.229:22 agent">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/jfhe/Documents/MountHe/jfhe/projects/clean_fewshot_unc" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>
