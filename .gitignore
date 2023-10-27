@@ -101,6 +101,7 @@ trees
 *.zip
 
 # pycharm
+.DS_Store
 .idea
 /src/data/
 /src/dataset_downloaded/
