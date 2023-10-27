@@ -27,13 +27,13 @@ Few-shot text classification has extensive application where the sample collecti
 ## Data
 #### Download
 
-We ran experiments on a total of 5 datasets. 
-Where 4 of them are publicly released. For the RCV1, please go to its official website to apply for the permission.
+We run experiments on a total of 5 datasets. 
+The 4 of them are publicly released. For the RCV1, please go to its official website to apply for the permission.
 You may download our processed data [here](https://virginiatech-my.sharepoint.com/:f:/g/personal/jianfenghe_vt_edu/ElQs6pR8yBhPqIzBDtXx78YBCnWQd-ABCuBFUL6AKO41sA?e=ZlN6g3), exclude RCV1.
 Once you have the RCV1 permission, please contact jianfenghe@vt.edu for the processed RCV1 datasets and follow the license from RCV1 permission.
 Our 20News, Amazon, Huffposts and RCV1 datasets use the same data split as work "Few-shot Text Classification with Distributional Signatures".
 
-Once you have downloaded the data, please put these jsonfiles in `data/`.
+Once you have downloaded the data, please put these json files in `data/`.
 
 ### Script
 For the 1-shot setting, you can run below script.
