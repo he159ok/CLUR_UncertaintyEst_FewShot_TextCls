@@ -29,7 +29,7 @@ Few-shot text classification has extensive application where the sample collecti
 
 We run experiments on a total of 5 datasets. 
 The 4 of them are publicly released. For the RCV1, please go to its official website to apply for the permission.
-You may download our processed data [here](https://virginiatech-my.sharepoint.com/:f:/g/personal/jianfenghe_vt_edu/ElQs6pR8yBhPqIzBDtXx78YBCnWQd-ABCuBFUL6AKO41sA?e=ZlN6g3), exclude RCV1.
+You may download our processed data [here](https://drive.google.com/drive/folders/1t32I9lNUsTReeX62a71BwfGmDfFDueP6?usp=sharing), exclude RCV1.
 Once you have the RCV1 permission, please contact jianfenghe@vt.edu for the processed RCV1 datasets and follow the license from RCV1 permission.
 Our data split of 20News, Amazon, Huffposts and RCV1 datasets are the same as "Few-shot Text Classification with Distributional Signatures".
 
@@ -77,7 +77,7 @@ To use other datadatasets, you can set the below parameters that used in the abo
 
 
 #### Checkpoints
-For the checkpoints of our reported results (CLUR-b-3), they are in the [here](https://virginiatech-my.sharepoint.com/:f:/g/personal/jianfenghe_vt_edu/EueYTl7SN4dOmNGyo6MMXsUB4sQVmwNZG8Vr10n7XB2ptw?e=2rZLYV).
+For the checkpoints of our reported results (CLUR-b-3), they are in the [here](https://drive.google.com/drive/folders/1d4VkoIzmOvrN7r7mXXuB5OLBDNTzbhl4?usp=sharing).
 You can reproduce our results by using the evaluation script, which replaces the `{path to the last saved epoch checkpoint file id}` accordingly.
 
 
