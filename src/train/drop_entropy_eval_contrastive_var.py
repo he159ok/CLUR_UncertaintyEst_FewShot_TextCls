@@ -23,7 +23,7 @@ from termcolor import colored
 import sklearn
 import sklearn.metrics
 
-def show_roc_auc(y_truth, y_pred_softmax, unc_list, cal_aupr = True):  # 应该百分比
+def show_roc_auc(y_truth, y_pred_softmax, unc_list, cal_aupr = True):  
 
 	y_truth = np.array(y_truth)
 	y_pred_label = torch.argmax(y_pred_softmax, dim=1).numpy()
