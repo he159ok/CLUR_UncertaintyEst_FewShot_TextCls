@@ -33,7 +33,7 @@ You may download our processed data [here](https://drive.google.com/drive/folder
 Once you have the RCV1 permission, please contact jianfenghe@vt.edu for the processed RCV1 datasets and follow the license from RCV1 permission.
 Our data split of 20News, Amazon, Huffposts and RCV1 datasets are the same as "Few-shot Text Classification with Distributional Signatures".
 
-Once you have downloaded the data, please put these json files in `data/`.
+Once you have downloaded the data, please put these json files in `src/data/`.
 
 ### Script
 For the 1-shot setting, you can run below script.
