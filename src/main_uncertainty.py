@@ -347,15 +347,9 @@ def main():
         args.way = way
 
 
-
-
-    if args.mode == 'test':
-        if args.tev_mode == 'acltev' and args.modelmode == "clur":
-            result = drop_entropy_eval_contrastive_var.few_test(test_data, model, args,
-                                                  args.test_episodes)
-        else:
-            raise ValueError(f'args.tev_mode={args.tev_mode} and args.modelmode={args.modelmode} might be wrong set')
-
+    if args.mode == 'test' or args.mode == 'train':
+        result = drop_entropy_eval_contrastive_var.few_test(test_data, model, args,
+                                                            args.test_episodes)
 
 
     save_json_path = args.snapshot[:-4] + 'result.json'

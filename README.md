@@ -82,13 +82,21 @@ You can reproduce our results by using the evaluation script, which replaces the
 
 
 #### Dependencies
-- Python 3.8
-- PyTorch 1.8.0
-- numpy 1.17.5
+On a 1080Ti Server:
+- Python 3.7 
+- PyTorch 1.2.0 
+- numpy 1.21.3
+- torchtext 0.4.0
+- transformers 4.12.3
+
+On a 3090 Server:
+- Python 3.8 
+- PyTorch 1.8.0 
+- numpy 1.17.5 
 - torchtext 0.4.0
 - transformers 4.10.3
-- termcolor 1.1.0
-- tqdm 4.64.1
+
+Please adapt one based on your own machine.
 
 
 #### Acknowledge & License
