@@ -7,10 +7,10 @@ from operator import itemgetter
 import torch
 
 import numpy as np
-from train.eval import show_results
+
 import scipy
 import scipy.stats
-from train.eval_contrastive import show_roc_auc
+
 
 
 import torch.nn as nn
@@ -19,6 +19,50 @@ import torch.nn as nn
 from dataset.parallel_sampler import ParallelSampler
 from tqdm import tqdm
 from termcolor import colored
+
+import sklearn
+import sklearn.metrics
+
+def show_roc_auc(y_truth, y_pred_softmax, unc_list, cal_aupr = True):  # 应该百分比
+
+	y_truth = np.array(y_truth)
+	y_pred_label = torch.argmax(y_pred_softmax, dim=1).numpy()
+	y_binary = (y_pred_label == y_truth).astype(int)
+	conf_array = 1.0 / (np.array(unc_list)+1.0)
+	fpr, tpr, thresholds_auroc = sklearn.metrics.roc_curve(y_binary, conf_array, pos_label=1)
+	auroc_score = sklearn.metrics.auc(fpr, tpr)
+
+	precision, recall, thresholds_aupr, aupr_score = None, None, None, None
+
+	if cal_aupr:
+		precision, recall, thresholds_aupr = sklearn.metrics.precision_recall_curve(y_binary, conf_array, pos_label=1)
+		aupr_score = sklearn.metrics.auc(recall, precision)
+
+	return auroc_score, fpr, tpr, thresholds_auroc, precision, recall, thresholds_aupr, aupr_score
+
+
+
+def show_results(class_num_flag, y_truth, y_pred, represent=None, target=None, writef_name=None):
+
+
+	if class_num_flag == 1:
+		accuracy_score = (sklearn.metrics.accuracy_score(y_truth, y_pred))
+		f1_score = (sklearn.metrics.f1_score(y_truth, y_pred, pos_label=1))
+		prec_score = (sklearn.metrics.precision_score(y_truth, y_pred, pos_label=1))
+		recall_score = (sklearn.metrics.recall_score(y_truth, y_pred, pos_label=1))
+		confusion_mat = (sklearn.metrics.confusion_matrix(y_truth, y_pred))
+
+
+		return f1_score
+
+	elif class_num_flag == 0:
+		accuracy_score = (sklearn.metrics.accuracy_score(y_truth, y_pred))
+		micro_f1_score = (sklearn.metrics.f1_score(y_truth, y_pred, average='micro'))
+		macro_f1_score = (sklearn.metrics.f1_score(y_truth, y_pred, average='macro'))
+
+
+		return macro_f1_score 
+
 
 
 
